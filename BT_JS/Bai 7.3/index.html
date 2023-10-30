@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOP</title>
+    <link rel="stylesheet" href="style.css" />
+    <span style="font-family: Arial">
+    <style type="text/css">
+      .login_box {
+        margin-bottom: 10px;
+      }
+      .login_box input {
+        padding: 7.5px 15px;
+        width: 93%;
+        border: 1px solid #cccccc;
+        outline: none;
+      }
+
+      .login-form {
+        width: 200%;
+        max-width: 500px;
+        margin: 60px auto;
+        background-color: #ffffff;
+        padding: 15px;
+        border: 2px double #cccccc;
+        border-radius: 10px;
+      }
+
+      h1 {
+        color: #1a9900;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .add {
+        text-align: center;
+        margin-top: 15px;
+      }
+      .add button {
+        padding: 7.5px 50px;
+        border-radius: 2px;
+        color: #ffffff;
+        background-color: #1a9900;
+        border: none;
+        outline: none;
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      function checkInfo() {
+        var id = document.getElementById("malop").value;
+        var tenlop = document.getElementById("tenlop").value;
+        var chuyennganh = document.getElementById("chuyennganh").value;
+        var gvcn = document.getElementById("GVCN").value;
+        id = Number(id);
+        if (Number.isInteger(id) === false) {
+          // alert("Id là số nguyên dương");
+          msg = "Id là số nguyên dương";
+        } else if (tenlop.length > 50) {
+          // alert("Tên lớp tối đa 50 ký tự");
+          msg = "Tên lớp tối đa 50 ký tự";
+        } else if (chuyennganh.length > 4) {
+          // alert("Tên khoa tối đa 4 ký tự");
+          msg = "Chuyên ngành tối đa 4 ký tự";
+        } else if (gvcn.length > 50) {
+          // alert("Tên tối đa 50 ký tự");
+          msg = "Tên GVCN tối đa 50 ký tự";
+        } else {
+          msg = "";
+        }
+        document.getElementById("alert").innerText = msg;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="login-form">
+      <h1>Nhập thông tin</h1>
+      <form>
+        <div class="login_box">
+          <input
+            type="text"
+            id="malop"
+            name="malop"
+            placeholder="Mã lớp"
+            onkeyup="checkInfo()"
+            required
+          />
+        </div>
+        <div class="login_box">
+          <input
+            type="text"
+            id="tenlop"
+            name="tenlop"
+            placeholder="Tên lớp"
+            onkeyup="checkInfo()"
+            required
+          />
+        </div>
+        <div class="login_box">
+          <input
+            type="text"
+            id="chuyennganh"
+            name="chuyennganh"
+            placeholder="Chuyên ngành"
+            onkeyup="checkInfo()"
+            required
+          />
+        </div>
+        <div class="login_box">
+          <input
+            type="text"
+            id="GVCN"
+            name="GVCN"
+            placeholder="GVCN"
+            onkeyup="checkInfo()"
+            required
+          />
+        </div>
+        <div class="add">
+          <button name="submit" type="submit" onclick="checkInfo()">Thêm mới</button>
+        </div>
+        <div id="alert"></div>
+      </form>
+    </div>
+    <div>
+      <table></table>
+    </div>
+  </body>
+</html>
+

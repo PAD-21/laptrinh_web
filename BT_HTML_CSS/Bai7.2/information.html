@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            
+        }
+        header{
+            margin-top: 40px;
+        }
+
+        .name_c{
+            font-size: 50px;
+            display: inline;
+            color: blue;
+            margin-left: 20px;
+        }
+        .banner{
+            display: inline;
+            margin-left: 150px;
+            font-size: 25px;
+            /* color: black; */
+            margin-bottom: 20px;         
+        }
+
+        .banner a{
+            text-decoration: none;  /*Làm mất dâu gạch chân*/
+            margin-right: 20px;
+            color: grey;
+        }
+        a.active{
+            color: black;
+        }
+        .in{
+            font-size: 30px;
+            color: grey;
+            margin-top: 0px;
+            margin-left: 20px;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: grey;
+        }
+
+        .site_left{
+            margin-left: 30px;
+             margin-top: -60px ; 
+        }
+
+        .content_left{
+            margin-bottom: 40px;
+            border-right: 1px solid grey;
+            margin-top: 20px;
+            width: 230px;
+            font-size: 20px;
+        }
+
+        .content_left li{
+            margin-top: 8px;
+            padding-right: 20px;
+        }
+
+        .site_right{
+            margin-right: 200px;
+            margin-left: 50px;
+            width: 80%;
+        }
+
+        .info{
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .info-content{
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        .info-content li{
+            margin-top: 10px;
+            
+        }
+
+    </style>
+
+    <header>
+        <div class="container" style="padding-left: 70px;">
+            <span class="name_c">
+                <b>Phan Anh Duy</b>
+            </span>
+
+            <div class="banner">
+                <a href="#" class="active">Trang chủ</a>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Công việc</a>
+                <a href="#">Mạng xã hội</a>
+                <a href="#">Liên hệ</a>
+            </div>
+            <p class="in">Information</p>
+        </div>
+    </header>
+    <hr>
+    <div class="menu" style="padding-left: 70px;">
+        <div class="site_left">
+            <h2>Những thứ tớ giỏi...</h2>
+            <div class="content_left">
+                <li>Chơi game</li>
+                <li>PHP</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <button class="main-left--btn" style="background-color: blue; color: white; outline: none; border: none; height: 35px; width: 125px; border-radius: 5px 5px 5px 5px; font-weight: bold; margin-top: 20px; ">LIÊN HỆ VỚI TỚ</button>
+            </div>
+        </div>
+
+        <div class="site_right">
+            <h1>Chào! Tớ là Anh Duy</h1>
+            <div class="info">
+                <div class="img_info">
+                    <img src="image/anhduy.jpg" alt="Img" style="height: 200px; width: 160px; border: 5px solid grey;">
+                </div>
+
+                <div class="info-content">
+                    <li> Tớ hiện đang là học sinh trường KMA
+                    </li>
+                    <li>Tên: Anh Duy</li>
+                    <li>Ngày sinh: 14-05-2002</li>
+                    <li>Quê Quán: Nghê An</li>
+                    <li>Đang học lớp AT17G</li>
+                </div>
+            </div>
+
+            <div style="font-size: 20px;">
+                <li style="margin-top: 10px; list-style-type: square;">
+                    Mình là bạn trẻ đam mê IT và hăng say với các project website của riêng mình ...
+                </li>
+                <li style="margin-top: 15px; list-style-type: square;">
+                    Đặc điểm nhận dạng: Gầy, còi xương.
+                </li>
+            </div>
+        </div>
+    </div>
+    <footer> </footer>
+</body>
+</html>

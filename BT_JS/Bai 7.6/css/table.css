@@ -1,0 +1,27 @@
+
+	.form {
+        width: 200%;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 15px;
+    }
+
+	#tbl {
+		border: solid 1px #FFFFFF;
+		border-collapse:collapse;
+	}
+	#tbl td, th {
+			border: solid 1px #FFFFFF;
+		}
+	#tbl thead {
+			background-color:#76f6eb;
+		}
+	#tbl tr.oddr {
+			background-color:#DDDDDD;
+		}
+	#tbl tr.evenr {
+			background-color:#FFCCFF;
+	}
+	#tbl tr.selectedr {background-color:rgb(252, 255, 102);}
+	.nodisplay {display:none;}
+	div.group-op-container {height:30px;}

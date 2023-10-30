@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/0d882d2a12.js" crossorigin="anonymous"></script>
+
+    <title>Curriculum_vitae</title>
+</head>
+<body>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        .header{
+            background-color: #66ccff;
+            width: 100%;
+            max-width: 100%;
+            height: 250px;
+        }
+
+        .info{
+            color: white;
+            margin-top: 40px;
+            text-align: justify;
+        }
+
+        .img-info{
+            border: 4px solid #3399ff;
+            padding-right: 0;
+            border-radius: 5px;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            width: 250px;
+            height: 250px;
+            margin-top: -200px;
+            margin-left: 275px;
+            
+        }
+
+        .body_cv{
+            background-color: white;
+            margin-top: 50px;
+            margin-left: 65px;
+        }
+
+        .img_left{
+            border-radius: 3px;
+            border-top-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .info_content p{
+            font-size: 14px;
+        }
+
+        .info_content h5{
+            margin-top: 20px;
+        }
+
+        .info_left i{
+            margin-top: 12px;
+        }
+
+        .info_per p{
+            margin-top: -4px;
+            font-size: 14px;
+        }
+
+        .like p{
+            margin-top: -10px;
+			font-size: 14px;
+			margin-left: 10px;
+        }
+
+        .skill p{
+            font-size: 14px;
+            margin-left: -52px;
+        }
+
+        .skill input{
+			margin-top: 5px;
+		}
+		.skill   input[type='radio']:after {
+	        width: 15px;
+	        height: 15px;
+	        border-radius: 15px;
+	        top: -2px;
+	        left: -1px;
+	        position: relative;
+	        background-color: black;
+	        content: '';
+	        display: inline-block;
+	        border: 2px solid white;
+    	}
+    	.skill input[type='radio']:checked:after {
+	        top: -2px;
+	        left: -1px;
+	        position: relative;
+	        background-color: #66ccff;
+	        content: '';
+	        border: 2px solid white;
+	    }
+
+    </style>
+
+    <header>
+        <div class="container header">
+            <div class="row">
+                <div class="col-sm-4"> </div>
+                <div class="col-sm-7 info" style="margin-left: 45px;">
+                    <h1 style="margin-top: 5px; padding-left: 100px;">Anh Duy</h1>
+                    <h4 style="margin-top: -10px; padding-left: 100px;">Ông hoàng vấp cỏ</h4>
+                    <p style="margin-top: 5px; margin-right: 150px; padding-left: 100px;">
+                        Áp dụng các kinh nghiệm về kĩ năng quét bug và sự hiểu biết về thị thường để trở thành một nhân viên quét bug chuyên nghiệp, nâng cao giá trị cho sản phẩm. Từ đó giúp Công ty tăng số lượng khách hàng, đóng góp cho công ty ngày càng phát triển.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <img class="img-info" src="https://static2.yan.vn/YanNews/2167221/202106/man-an-va-trong-ki-euro-cuoi-cua-cr7-nhan-nhieu-gach-da-8b8f77c5.jpeg" alt="img">
+    </header>
+
+
+    <div class="container body_cv" style="padding-left: 200px;">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-1 ">
+                            <img class="img_left" src="image/img1.png"  alt="">
+                            <img src="image/img.png" style="margin: 30px 13px;" alt="">
+                        </div>
+
+                        <div class="col-sm-11 info_content">
+                            <h2 style="margin-left: 20px;">HỌC VẤN</h2>
+                            <h3 style="margin-top: 20px; margin-left: 20px;">AN TOÀN THÔNG TIN</h3>
+                            <p style="margin-left: 20px;"><b>Học viện KMA actvn.edu.vn</b></p>
+                            <p style="margin-top: -10px; margin-left: 20px;"><b>Tốt nghiệp đại học loại yếu, điểm trung bình 1.0</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-1 info_left">
+                            <img class="img_left" src="image/img3.png" >
+                            <img src="image/img.png" style="margin: 30px 13px;">
+                            <img src="image/img.png" style="margin: 84px 13px;">
+                        </div>
+
+                        <div class="col-sm-11 info_content">
+                            <h2 style="margin-left: 20px;">KINH NGHIỆM LÀM VIỆC</h2>
+                            <h5 style="margin-left: 20px;">
+                                <b>CÔNG TY CVonline.com.vn | 3/2015 - hiện tại</b>
+                            </h5>
+                            <p style="margin-left: 20px;">
+                                <b>
+                                   - Hỗ trợ viết bài quảng cáo sản phẩm qua kênh forum, facebook,...
+                                </b>
+                            </p>
+
+                            <p style="margin-top: -10px; margin-left: 20px;">
+                                <b>
+                                    - Giới thiệu, tư vấn sản phẩm giải đáp các vấn đề thắc mắc của khách hàng qua điện thoại và email.
+                                </b>
+                            </p>
+
+                            <h5 style="margin-left: 20px;">
+                                <b>CÔNG TY CVonline.com.vn | 6/2014 - 2/2015</b>
+                            </h5>
+                            <p style="margin-left: 20px;">
+                                <b>
+                                    - Bán hàng trực tiếp tại cửa hàng cho người nước ngoài và người Việt,
+                                </b>
+                            </p>
+
+                            <p style="margin-top: -10px; margin-left: 20px;">
+                                <b>
+                                    - Quảng bá sản phẩm thông qua các ấn phẩm truyền thông: banner, poster,tờ rơi...
+                                </b>
+                            </p>
+                            <p style="margin-top: -10px; margin-left: 20px;">
+                                <b>
+                                    - Lập báo cáo sản lượng bán ra hằng ngày.
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" style="margin-top: 20px;">
+                    <div class="row">
+                        <div class="col-sm-1 info_left">
+                            <img class="img_left" src="image/img5.png">
+                            
+                        </div>
+
+                        <div class="col-sm-11" style="font-size: 13px;">
+                        
+                            <h2 style="margin-left: 20px; margin-bottom: 25px;">HOẠT ĐỘNG</h2>
+                            <p style="margin-left: 20px; margin-top: -10px;">Nhóm tình nguyện CVonline.com.vn</p>
+                            <p style="margin-top: -10px; margin-left: 20px;">Tình nguyện viên</p>
+                            <p style="margin-top: -10px; margin-left: 20px;">Tập hợp các món quà và phân phát tới người vô gia cư</p>
+                            <p style="margin-top: -10px; margin-left: 20px;">Chia sẻ động viên họ vượt qua giai đoạn khó khăn, giúp họ có những suy nghĩ tích cực</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-1 info_left ">
+                            <img class="img_left" src="image/img7.png">
+                        </div>
+
+                        <div class="col-sm-11">
+                            <h2 style="margin-left: 20px;margin-bottom: 25px;">THÀNH TÍCH</h2>
+                            <h5 style="margin-left: 20px; margin-top: -10px;">
+                                <b>Công ty CVonline.com.vn</b>
+                            </h5>
+                            <p style="margin-left: 20px; font-size: 13px; margin-top: -10px;"><b>Nhân viên xuất sắc | 2018</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-1 info_left">
+                            <img src="image/img2.png" class="img_left">
+                            <i class="fa-solid fa-square-phone"></i>
+                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-regular fa-window-maximize"></i>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <i class="fa-solid fa-mars-and-venus"></i>
+                        </div>
+
+                        <div class="col-sm-11 info_per" style="font-size: 13px;">
+                            <h2 style="margin-left:20px;margin-bottom:25px;">LIÊN HỆ</h2>
+                            <p style="margin-top: -15px;"><b>0123456789</b></p>		
+                            <p><b>hr@cvonline.com.vn</b></p>		
+                            <p><b>https://cvonline.com.vn</b></p>		
+                            <p><b>Triều Khúc - Thanh Trì - Hà Nội</b></p>		
+                            <p><b>14/05/2002</b></p>		
+                              <p><b>Nam</b></p>		
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" style="margin-top:20px;">
+                    <div class="row">
+                        <div class="col-sm-1 info_left">
+                            <img src="image/img4.png" class="img_left">
+                        </div>
+
+                        <div class="col-sm-11 skill" style="font-size: 13px;">
+                            <h2 style="margin-left:20px;margin-bottom: 25px;">KỸ NĂNG</h2>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <p><b>Tin học văn phòng</b></p>
+                                    </div>
+
+                                    <div class="col-sm-8">
+                                        <img src="image/thvp.png" style="margin: -20px -15px -15px -15px; height: 20px; width:150px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <p><b>Làm việc nhóm</b></p>
+                                    </div>
+
+                                    <div class="col-sm-8">
+                                        <img src="image/lmvn.png" style="margin: -20px -15px -15px -15px; height: 20px; width:150px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <p><b>Thuyết trình</b></p>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <img src="image/tt.png" style="margin: -20px -15px -15px -15px; height: 20px; width:150px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <p><b>Tiếng Anh</b></p>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <img src="image/ta.png" style="margin: -20px -15px -15px -15px; height: 20px; width:150px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <p><b>Tiếng Nhật</b></p>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <img src="image/tn.png" style="margin: -20px -15px -15px -15px; height: 20px; width:150px;">
+                                    </div>
+                                </div>
+                            </div>
+                              
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" style="margin-top:20px;">
+                    <div class="row">
+                        <div class="col-sm-1 info_left">
+                            <img src="image/img6.png" class="img_left" style="margin-bottom:20px;">
+                            <img src="image/img.png" style="margin:7px 13px;">
+                            <img src="image/img.png" style="margin:7px 13px;">
+                            <img src="image/img.png" style="margin:7px 13px;">
+                            <img src="image/img.png" style="margin:7px 13px;">
+                            <img src="image/img.png" style="margin:7px 13px;">
+                        </div>
+                        <div class="col-sm-11 like" style="font-size: 13px;">
+                            <h2 style="margin-left:20px; margin-bottom:35px;">SỞ THÍCH</h2>
+                            <p><b>Đọc sách</b></p>		
+                            <p><b>Nấu ăn</b></p>
+                            <p><b>Cắm hoa</b></p>
+                            <p><b>Piano</b></p>	
+                            <p><b>Du lịch</b></p>		  				
+                                      
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<footer></footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  .item {
+    display: flex;
+    width: 400px;
+    margin: 16px 0;
+  }
+
+  .required {
+    background-color: aqua;
+  }
+
+  .item-label {
+    width: 120px;
+    align-items: center;
+  }
+
+  .item > input {
+    flex: 1;
+  }
+
+  .gender-input {
+    display: flex;
+  }
+
+  .register-checkbox {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .note {
+    resize: none;
+  }
+
+  .accept {
+    margin-right: 8px;
+  }
+
+  /* Set a style for the submit/register button */
+  .registerbtn {
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}

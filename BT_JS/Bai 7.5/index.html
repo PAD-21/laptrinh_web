@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dang ky thanh vien</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form-register">
+      <div class="container">
+        <div class="item">
+          <label for="fullName" class="item-label">Họ tên:</label>
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            class="required"
+            required
+            onkeydown="handleEnter(event)"
+            onblur="checkFullName()"
+            autofocus
+          />
+        </div>
+        <div class="item">
+          <label for="address" class="item-label">Địa chỉ:</label>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            required
+            onkeydown="handleEnter(event)"
+          />
+        </div>
+        <div class="item">
+          <label for="gender" class="item-label">Giới tính:</label>
+          <div class="gender-input">
+            <input
+              type="radio"
+              id="boy"
+              name="gender"
+              value="1"
+              onkeydown="handleEnter(event)"
+            />
+            <label for="boy">Nam</label><br />
+            <input
+              type="radio"
+              id="girl"
+              name="gender"
+              value="0"
+              onkeydown="handleEnter(event)"
+            />
+            <label for="girl">Nữ</label><br />
+          </div>
+        </div>
+        <div class="item">
+          <label for="birthday" class="item-label">Ngày sinh:</label>
+          <input
+            type="text"
+            name="birthday"
+            id="birthday"
+            required
+            class="required"
+            onkeydown="handleEnter(event)"
+            onkeyup="checkBirthday(event)"
+          />
+        </div>
+        <div class="item">
+          <label for="email" class="item-label">E-mail:</label>
+          <input
+            type="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            name="email"
+            id="email"
+            required
+            class="required"
+            onkeydown="handleEnter(event)"
+          />
+        </div>
+        <div class="item">
+          <label for="phone" class="item-label">Điện thoại:</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            required
+            onkeydown="handleEnter(event)"
+          />
+        </div>
+        <div class="item">
+          <label for="class-register" class="item-label">Khóa đăng ký:</label>
+          <div class="register-checkbox">
+            <input
+              type="checkbox"
+              id="english"
+              name="class-register"
+              value="1"
+              onkeydown="handleEnter(event)"
+            />
+            <label for="english">Tiếng Anh</label><br />
+            <input
+              type="checkbox"
+              id="admin"
+              name="class-register"
+              value="0"
+              onkeydown="handleEnter(event)"
+            />
+            <label for="admin">Quản Trị</label><br />
+            <input
+              type="checkbox"
+              id="it"
+              name="class-register"
+              value="0"
+              onkeydown="handleEnter(event)"
+            />
+            <label for="it">CNTT</label><br />
+          </div>
+        </div>
+        <div class="item">
+          <label for="user" class="item-label">Tên sử dụng:</label>
+          <input
+            type="text"
+            name="user"
+            id="user"
+            required
+            class="required"
+            onkeydown="handleEnter(event)"
+          />
+        </div>
+        <div class="item">
+          <label for="password" class="item-label">Mật khẩu:</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            required
+            class="required"
+            onkeydown="handleEnter(event)"
+          />
+        </div>
+        <div class="item">
+          <label for="repeatPassword" class="item-label"
+            >Gõ lại mật khẩu:</label
+          >
+          <input
+            type="text"
+            name="repeatPassword"
+            id="repeatPassword"
+            required
+            class="required"
+            onkeydown="handleEnter(event)"
+          />
+        </div>
+        <div class="item">
+          <label for="note" class="item-label">Ghi chú:</label>
+          <textarea
+            id="note"
+            name="note"
+            rows="4"
+            cols="32"
+            class="note"
+            onkeydown="handleEnter(event)"
+          ></textarea>
+        </div>
+
+        <div class="item">
+          <label class="item-label"></label>
+          <button type="button" class="accept">Chấp nhận</button>
+          <button type="button" class="skip">Bỏ qua</button>
+        </div>
+      </div>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>

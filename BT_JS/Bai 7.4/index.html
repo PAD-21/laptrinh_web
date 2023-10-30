@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOSO</title>
+    <span style="font-family: Arial">
+    <style type="text/css">
+          .login_box {
+          margin-bottom: 10px;
+        }
+        .login_box input {
+          padding: 7.5px 15px;
+          width: 93%;
+          border: 1px solid #cccccc;
+          outline: none;
+        }
+        
+        .login-form {
+          width: 200%;
+          max-width: 500px;
+          margin: 30px auto;
+          background-color: #ffffff;
+          padding: 15px;
+          border: 2px double #cccccc;
+          border-radius: 10px;
+        }
+        
+        h1 {
+          color: #1a9900;
+          font-size: 20px;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        
+        .add {
+          text-align: center;
+          margin-top: 15px;
+        }
+        .add button {
+          padding: 7.5px 50px;
+          border-radius: 2px;
+          color: #ffffff;
+          background-color: #1a9900;
+          border: none;
+          outline: none;
+        }
+    </style>
+    <script>
+      function dateIsValid(date) {
+        var isValidDate = Date.parse(date);
+        if (isNaN(isValidDate)) {
+          return false;
+        } else {
+          return true;
+        }
+      }
+      function checkInfo() {
+        var MaSV = document.getElementById("MaSV").value;
+        var HoTen = document.getElementById("HoTen").value;
+        var birth = document.getElementById("birth").value;
+        var Addr = document.getElementById("addr").value;
+        var Lop = document.getElementById("Lop").value;
+        var TBC = document.getElementById("TBC").value;
+        console.log(dateIsValid(new Date("2022-03-36")));
+        // Birth = new Date(birth);
+        if (MaSV.length > 8) {
+          // alert("Mã lớp không hợp lệ");
+          msg = "Mã SV không hợp lệ";
+        } else if (HoTen.length > 50) {
+          // alert("Họ tên không hợp lệ");
+          msg = "Họ tên không hợp lệ";
+        } else if (!dateIsValid(birth)) {
+          msg = "Ngày sinh không hợp lệ";
+        } else if (addr.length > 150) {
+          // alert("Tên lớp không hợp lệ");
+          msg = "Địa chỉ không hợp lệ";
+        } else if (Lop.length > 6) {
+          // alert("Lớp không hợp lệ");
+          msg = "Lớp không hợp lệ";
+        } else if (isNaN(TBC)) {
+          // alert("TBC không hợp lệ");
+          msg = "TBC không hợp lệ";
+        } else {
+          msg = "";
+        }
+        document.getElementById("alert").innerText = msg;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="login-form">
+      <h1>Hồ sơ</h1>
+      <form>
+        <div class="login_box">
+          <input
+            type="text"
+            id="MaSV"
+            name="MaSV"
+            placeholder="Mã sinh viên"
+            onkeyup="checkInfo()"
+            required
+          />
+        </div>
+        <div class="login_box">
+          <input
+            type="text"
+            id="HoTen"
+            name="HoTen"
+            placeholder="Họ và tên"
+            onkeyup="checkInfo()"
+            required
+          />
+        </div>
+        <div class="login_box">
+          <input
+            type="text"
+            id="birth"
+            name="birth"
+            placeholder="Ngày sinh"
+            onkeyup="checkInfo()"
+            required
+          />
+        </div>
+        <div class="login_box">
+          <input
+            type="text"
+            id="addr"
+            name="addr"
+            placeholder="Địa chỉ"
+            onkeyup="checkInfo()"
+            required
+          />
+        </div>
+        <div class="login_box">
+          <input
+            type="text"
+            id="Lop"
+            name="Lop"
+            placeholder="Lớp"
+            onkeyup="checkInfo()"
+            required
+          />
+        </div>
+        <div class="login_box">
+          <input
+            type="text"
+            id="TBC"
+            name="TBC"
+            placeholder="Điểm trung bình"
+            onkeyup="checkInfo()"
+            required
+          />
+        </div>
+        <div class="add">
+          <button name="submit" type="submit" onclick="checkInfo()">Thêm mới</button>
+        </div>
+        <div id="alert"></div>
+      </form>
+    </div>
+    <div>
+      <table></table>
+    </div>
+  </body>
+</html>
